@@ -36,7 +36,6 @@
 
 body{
     font-family: 'GmarketSansMedium';
-    box-sizing: border-box;
     background-color: var(--purple);
 }
 /* main */
@@ -199,23 +198,24 @@ body{
 /* 화이팅 모달창 */
 .cont-modal{
     text-align: center;
-    margin: 0 auto;
-    padding: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flow-root;
     width: 947px;
     background-color: var(--white);
     border-radius: 20px;
-    /* box-shadow: 모르겠다 */    
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 /* 모달창의 모든 이미지 선택 */
 .cont-modal img{
     display: block;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 /* 모달창 내 타이틀 이미지 */
 .modal-title{
-    padding: 70px 0 20px 0;
+    margin:100px 0 25px 0;
     font-size: 96px;
-    margin: 40px 0;
 }
 /* 모달창 내 서브타이틀 이미지 */
 .modal-subtitle{
@@ -225,17 +225,17 @@ body{
 .modal-lion{
     width: 433px;
     height: 337px;
-    padding: 75px 0;
+    margin: 75px 0;
 }
 .btn-go{
     width: 508px;
     height: 66px;
     border-radius: 56px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     background-color: var(--yellow);
     color: var(--purple);
     font-size: 24px;
     font-family: 'GmarketSansBold';
     margin-bottom: 100px ;
 }
-/* 모달창의 문제가 있다. */
 
