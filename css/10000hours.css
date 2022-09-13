@@ -122,6 +122,7 @@ body{
     font-size: 24px;
     font-family: 'GmarketSansBold';
     margin: 115px 0 147px 0;
+    vertical-align: middle;
 }
 /* 커서 아이콘 */
 .cont-cursor{
@@ -238,4 +239,3 @@ body{
     font-family: 'GmarketSansBold';
     margin-bottom: 100px ;
 }
-
