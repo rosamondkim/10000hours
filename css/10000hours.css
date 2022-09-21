@@ -41,8 +41,9 @@ body{
 /* main */
 #app{
     width: 780px;
-    padding-top:125px;
-    margin: 0 auto;
+    margin-top:194px ;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
 }
 /* 1만시간의 법칙 로고+시계이미지 */
@@ -59,14 +60,13 @@ body{
     width: 261px;
     height: 265px;
     position: absolute;
-    top:-70px;
+    top:-73px;
     right: 250px;
     z-index: -1;
 } 
 /* 연습은 어제의 당신보다~ */
 .img-txt{
-    font-size: 36px;
-    margin: 78px;
+    margin: 125px 0 78px 0;
 }
 /* 1만시간의 법칙 설명+따옴표 */
 .tit-content{
@@ -87,15 +87,16 @@ body{
 /* 따옴표 */
 .img-quotes{
     position: absolute;
-    top: 10px;
-    right: 150px;
+    top: 15px;
+    right: 145px;
+    
 }
 /* 첫번째 폼 */
 .cont-inp{
     position: relative;
     color: var(--white);
     font-size: 24px;
-    margin-bottom: 38px;
+
 }
 /* 첫번째 폼 첫줄 */
 .txt-wannabe{
@@ -104,11 +105,11 @@ body{
 /* 첫번째 폼 input 부분 */
 .cont-inp input{
     text-align: center;
-    padding: 0 17px;
     width: 228px;
     height: 57px;
     border-radius: 7px;
     font-size:24px;
+    margin: 0 17px;
     font-family: 'GmarketSansMedium';
 }
 /* 첫번째 폼 버튼 */
@@ -122,7 +123,7 @@ body{
     font-size: 24px;
     font-family: 'GmarketSansBold';
     margin: 115px 0 147px 0;
-    vertical-align: middle;
+
 }
 /* 커서 아이콘 */
 .cont-cursor{
@@ -132,8 +133,15 @@ body{
 }
 /* 안보이게하기 */
 .blind{
-    display: none;
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
 }
+
 /* 결과 */
 .cont-result{
     text-align: center;
@@ -166,11 +174,16 @@ body{
 }
 /* 훈련하러가기 버튼 */
 .btn-go{
-    background-color: var(--yellow);
     width: 356px;
     height: 66px;
     margin-right: 18px;
+    font-size: 24px;
+    background-color: var(--yellow);
+    color: var(--purple);
+    border-radius: 56px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
+
 /* 공유하기버튼 */
 .btn-share{
     background-color: var(--white);
@@ -203,6 +216,7 @@ body{
     margin-right: auto;
     display: flow-root;
     width: 947px;
+    font-family: 'GmarketSansMedium';
     background-color: var(--white);
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
@@ -215,7 +229,7 @@ body{
 }
 /* 모달창 내 타이틀 이미지 */
 .modal-title{
-    margin:100px 0 25px 0;
+    margin:80px 0 25px 0;
     font-size: 96px;
 }
 /* 모달창 내 서브타이틀 이미지 */
@@ -226,16 +240,19 @@ body{
 .modal-lion{
     width: 433px;
     height: 337px;
-    margin: 75px 0;
+    margin-top: 75px;
 }
-.btn-go{
+/* 종료하고 훈련하러가기 btn */
+.btn-exit{
     width: 508px;
     height: 66px;
-    border-radius: 56px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 21px 49px;
+    margin: 80px 0;
+    font-size: 24px;
     background-color: var(--yellow);
     color: var(--purple);
-    font-size: 24px;
+    border-radius: 56px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     font-family: 'GmarketSansBold';
-    margin-bottom: 100px ;
+
 }
