@@ -1,3 +1,6 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
 @font-face {
     font-family: 'OTEnjoystoriesBA';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
@@ -124,7 +127,6 @@ body{
     font-family: 'GmarketSansBold';
     margin: 115px 0 147px 0;
 
-
 }
 /* 커서 아이콘 */
 .cont-cursor{
@@ -212,16 +214,21 @@ body{
 }
 /* 화이팅 모달창 */
 .cont-modal{
+    position: fixed;
+    top: 10%;
+    left: 30%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     display: flow-root;
-    width: 947px;
     font-family: 'GmarketSansMedium';
     background-color: var(--white);
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
 }
+
+
 /* 모달창의 모든 이미지 선택 */
 .cont-modal img{
     display: block;
@@ -230,7 +237,7 @@ body{
 }
 /* 모달창 내 타이틀 이미지 */
 .modal-title{
-    margin:80px 0 25px 0;
+    margin:50px 0 25px 0;
     font-size: 96px;
 }
 /* 모달창 내 서브타이틀 이미지 */
@@ -241,14 +248,15 @@ body{
 .modal-lion{
     width: 433px;
     height: 337px;
-    margin-top: 75px;
+    
 }
 /* 종료하고 훈련하러가기 btn */
 .btn-exit{
+    display: block;
     width: 508px;
     height: 66px;
     padding: 21px 49px;
-    margin: 80px 0;
+    margin: 30px;
     font-size: 24px;
     background-color: var(--yellow);
     color: var(--purple);
@@ -260,3 +268,10 @@ body{
 .hidden{
     display: none;
 }
+
+/* body 스크롤 방지용 */
+.stop-scroll{
+    height: 100%;
+    overflow: hidden;
+}
+
